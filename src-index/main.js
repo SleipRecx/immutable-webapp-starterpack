@@ -1,8 +1,8 @@
-const fs = require('fs');
+const fs = require("fs");
 
-const sha = 1;
-const environment =  "test";
-const url = 'https://my-bucket-url' ;
+const sha = process.env.GITHUB_SHA;
+const environment = "test";
+const url = "https://my-s3-tf-test-bucket-1.s3-eu-west-1.amazonaws.com";
 const date = new Date().toISOString();
 
 const index = `<!doctype html>
@@ -31,4 +31,4 @@ const index = `<!doctype html>
    </body>
 </html>`;
 
-fs.writeFile('index.html', index, 'utf8', function(){});
+fs.writeFile("index.html", index, "utf8", function () {});
