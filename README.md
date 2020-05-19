@@ -49,6 +49,7 @@ Bygg assets lokalt med `npm run build` og bruk aws-cliet til å laste opp alt in
 
 `aws s3 cp <LocalPath> <S3Uri>`
 
+
 Se [AWS-cli-docs](https://docs.aws.amazon.com/cli/latest/reference/s3/cp.html) for `aws s3 cp`
 
 <details><summary>Tips</summary>
