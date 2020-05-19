@@ -64,6 +64,6 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: eu-west-1
       - name: Copy files to S3 with the AWS CLI
-        run: node src-index/main.js
-        run: |
+        - run: node src-index/main.js
+        - run: |
           aws s3 cp index.html s3://my-s3-tf-test-bucket-2/ --cache-control no-store
